@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Sedona</title>
+  <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <header class="main-header">
+      <nav class="main-navigator">
+        <ul class="clearfix">
+          <li><a href="index.html">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="main-logo">
+              <a href="index.html"><img src="img/header-logo.png" alt="Sedona" width="138" height="70"></a>
+          </li>
+          <li><a class="active" href="#" >Гостиницы</a></li>
+          <li><a href="#">Карта штата</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+  <section class="hotel-search clearfix">
+        <form action="action.php" method="POST" class="clearfix">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input id="checkbox-1" type="checkbox" checked>
+            <label for="checkbox-1">Бассейн</label>
+            <input id="checkbox-2" type="checkbox">
+            <label for="checkbox-2">Парковка</label>
+            <input id="checkbox-3" type="checkbox">
+            <label for="checkbox-3">Wi-Fi</label>
+          </fieldset><!--
+          --><fieldset>
+              <legend>Тип жилья:</legend>
+              <input id="checkbox-4" type="checkbox" checked>
+              <label for="checkbox-4">Гостиница</label>
+              <input id="checkbox-5" type="checkbox" checked>
+              <label for="checkbox-5">Мотель</label>
+              <input id="checkbox-6" type="checkbox" checked>
+              <label for="checkbox-6">Апартаменты</label>
+            </fieldset><!--
+          --><fieldset class="price-range">
+              <legend>Стоимость в сутки (Р):</legend>
+
+              <div class="range-filter">
+                <div class="price-controls">
+                  <div>от <input class="min-price" type="text" value="0"></div>
+                  <div>до <input class="max-price" type="text" value="3000"></div>
+                </div>
+                <div class="range-controls">
+                  <div class="scale"><div style="margin-left:0px;width:254px;" class="bar"></div></div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+              </div>
+
+              <input type="submit" value="Показать">
+            </fieldset>
+        </form>
+  </section>
+
+  <section class="hotel-search-result clearfix">
+        <div class="sort-result">
+          <span>Найдено: 3</span>
+        </div><!--
+        --><div class="sort-type">
+          <span>Сортировка:</span>
+          <ul>
+            <li><a href="" class="active-sort">По цене</a></li><!--
+            --><li><a href="">По типу</a></li><!--
+            --><li><a href="">По рейтингу</a></li>
+          </ul>
+        </div><!--
+        --><div class="sort-buttons">
+          <a class="search-up" href="#"><i class="icon-up-dir"></i></a>
+          <a class="search-down" href="#"><i class="icon-down-dir active-sort"></i></a>
+        </div>
+  </section>
+
+  <section class="sedona-hotels clearfix">
+          <div class="img-wrapper">
+            <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara resot &amp; spa">
+          </div><!--
+          --><div class="hotel-description clearfix">
+            <h1>Amara resort &amp; spa</h1>
+            <div class="hotel-buttons clearfix">
+              <div>
+                <p>гостиница</p>
+                <a href="#" class="btn-more">Подробнее</a>
+              </div><!--
+              --><div>
+                <p>от 3500 р.</p>
+                <a href="#" class="btn-order">Забронировать</a>
+              </div>
+            </div>
+          </div><!--
+          --><div class="hotel-rang">
+            <p class="range-star">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </p>
+            <div>Рейтинг: 8,5</div>
+          </div>
+  </section>
+  <section class="sedona-hotels clearfix">
+          <div class="img-wrapper">
+            <img src="img/desert-hotel.jpg" width="135" height="90" alt="Amara resot &amp; spa">
+          </div><!--
+          --><div class="hotel-description clearfix">
+            <h1>Desert quail inn</h1>
+            <div class="hotel-buttons clearfix">
+              <div>
+                <p>мотель</p>
+                <a href="#" class="btn-more">Подробнее</a>
+              </div><!--
+              --><div>
+                <p>от 2000 р.</p>
+                <a href="#" class="btn-order">Забронировать</a>
+              </div>
+            </div>
+          </div><!--
+          --><div class="hotel-rang">
+            <p class="range-star">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </p>
+            <div>Рейтинг: 8,9</div>
+          </div>
+  </section>
+  <section class="sedona-hotels clearfix">
+          <div class="img-wrapper">
+            <img src="img/villas-hotel.jpg" width="135" height="90" alt="Amara resot &amp; spa">
+          </div><!--
+          --><div class="hotel-description clearfix">
+            <h1>Villas at poco diablo</h1>
+            <div class="hotel-buttons clearfix">
+              <div>
+                <p>апартаменты</p>
+                <a href="#" class="btn-more">Подробнее</a>
+              </div><!--
+              --><div>
+                <p>от 4000 р.</p>
+                <a href="#" class="btn-order">Забронировать</a>
+              </div>
+            </div>
+          </div><!--
+          --><div class="hotel-rang">
+            <p class="range-star">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </p>
+            <div>Рейтинг: 9,2</div>
+          </div>
+  </section>  
+  </main>
+
+  <footer class="footer-second clearfix">
+     <p><a href="">#visitsedona</a></p>
+
+     <section class="sedona-social">
+       <a class="social-btn social-btn-tw" href="#"></a>
+       <a class="social-btn social-btn-fb" href="#"></a>
+       <a class="social-btn social-btn-youtube" href="#"></a>
+     </section>
+
+     <section class="sedona-author">
+      <a href="">website by</a>
+     </section>
+    </footer>
+</div>
+</body>
+</html>
